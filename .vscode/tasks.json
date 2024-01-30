@@ -21,8 +21,9 @@
                 "-std=c++20", // use c++ 20 as the language standard
                 "${workspaceFolder}/src/**/*.cpp", // compile all files in src nested
                 "${workspaceFolder}/src/*.cpp", // compile all files in src
+                "-lncurses", // link ncurses
                 "-o",
-                "${workspaceFolder}/bin/process-viewer"
+                "${workspaceFolder}/bin/process-viewer.out"
             ],
             "options": {
                 "cwd": "${fileDirname}"
