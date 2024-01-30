@@ -2,7 +2,7 @@
 
 int main()
 {
-    readMemoryInfo();
+    pollMemoryInfo();
 
     return 0;
 }

@@ -10,5 +10,6 @@
 #define MEMORY_H
 
 void readMemoryInfo();
+void pollMemoryInfo();
 
 #endif
