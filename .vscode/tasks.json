@@ -17,13 +17,12 @@
                 "-Wconversion", // more warnings
                 "-Wsign-conversion", // more warnings
                 "-pedantic-errors", // generate errors if code violates strict ISO C and ISO C++
-                "-I/source/includes", // search for user defined header files in this location
+                // "-I{workspaceFolder}/src", // search for user defined header files in this location
                 "-std=c++20", // use c++ 20 as the language standard
-                // "${file}", // compile a single file
-                "${fileDirname}/**.cpp", // compile all file in the current directory
-                // "${workspaceFolder}/*.cpp", // compile all files in workspace
+                "${workspaceFolder}/src/**/*.cpp", // compile all files in src nested
+                "${workspaceFolder}/src/*.cpp", // compile all files in src
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.exe"
+                "${workspaceFolder}/bin/process-viewer"
             ],
             "options": {
                 "cwd": "${fileDirname}"

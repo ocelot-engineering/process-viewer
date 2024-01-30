@@ -4,7 +4,7 @@
             "name": "C/C++: g++ build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
+            "program": "${workspaceFolder}/bin/process-viewer",
             "args": [],
             "stopAtEntry": false, // change to true to debug from start of main
             "cwd": "${fileDirname}",
